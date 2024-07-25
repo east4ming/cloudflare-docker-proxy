@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "libcuda.so"
+CUSTOM_DOMAIN = "e-whisper.com"
 
 [env.dev.vars]
 MODE = "debug"
@@ -17,13 +17,13 @@ CUSTOM_DOMAIN = "exmaple.com"
 [env.production]
 name = "cloudflare-docker-proxy"
 # routes = [
-#   { pattern = "docker.libcuda.so", custom_domain = true },
-#   { pattern = "quay.libcuda.so", custom_domain = true },
-#   { pattern = "gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s-gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s.libcuda.so", custom_domain = true },
-#   { pattern = "ghcr.libcuda.so", custom_domain = true },
-#   { pattern = "cloudsmith.libcuda.so", custom_domain = true },
+#   { pattern = "docker.e-whisper.com", custom_domain = true },
+#   { pattern = "quay.e-whisper.com", custom_domain = true },
+#   { pattern = "gcr.e-whisper.com", custom_domain = true },
+#   { pattern = "k8s-gcr.e-whisper.com", custom_domain = true },
+#   { pattern = "k8s.e-whisper.com", custom_domain = true },
+#   { pattern = "ghcr.e-whisper.com", custom_domain = true },
+#   { pattern = "cloudsmith.e-whisper.com", custom_domain = true },
 # ]
 
 [env.production.vars]
@@ -32,7 +32,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.libcuda.so", custom_domain = true }
+# route = { pattern = "docker-staging.e-whisper.com", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
