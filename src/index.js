@@ -7,6 +7,7 @@ const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
   // production
+<<<<<<< HEAD
   ["docker." + CUSTOM_DOMAIN]: dockerHub,
   ["quay." + CUSTOM_DOMAIN]: "https://quay.io",
   ["gcr." + CUSTOM_DOMAIN]: "https://gcr.io",
@@ -15,6 +16,17 @@ const routes = {
   ["ghcr." + CUSTOM_DOMAIN]: "https://ghcr.io",
   ["cloudsmith." + CUSTOM_DOMAIN]: "https://docker.cloudsmith.io",
   ["ecr." + CUSTOM_DOMAIN]: "https://public.ecr.aws",
+=======
+  "docker.e-whisper.com": dockerHub,
+  "quay.e-whisper.com": "https://quay.io",
+  "gcr.e-whisper.com": "https://gcr.io",
+  "k8s-gcr.e-whisper.com": "https://k8s.gcr.io",
+  "k8s.e-whisper.com": "https://registry.k8s.io",
+  "ghcr.e-whisper.com": "https://ghcr.io",
+  "cloudsmith.e-whisper.com": "https://docker.cloudsmith.io",
+  "ecr.e-whisper.com": "https://public.ecr.aws",
+  "mcr.e-whisper.com": "https://mcr.microsoft.com",
+>>>>>>> 43597d5 (:whale: add mcr.microsoft.com)
 
   // staging
   ["docker-staging." + CUSTOM_DOMAIN]: dockerHub,
