@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths-ignore:
-      - '**.md'
+      - "**.md"
   repository_dispatch:
 
 jobs:
@@ -17,11 +17,10 @@ jobs:
       - name: Publish
         uses: cloudflare/wrangler-action@v3
         env:
-          CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN || 'libcuda.so' }}
+          CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN || 'e-whisper.com' }}
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{secrets.CF_ACCOUNT_ID}}
-          vars:
-            CUSTOM_DOMAIN
+          vars: CUSTOM_DOMAIN
           command: deploy --env production --minify src/index.js
           environment: production
